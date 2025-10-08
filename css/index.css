@@ -113,10 +113,11 @@ a.button:hover {
 }
 
 .centered-img {
-  width: 50px;
-  height: auto;
   display: block;
   margin: 0 auto;
+  max-width: 300px;
+  width: 80%;
+  height: auto;
 }
 
 
