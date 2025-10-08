@@ -112,6 +112,13 @@ a.button:hover {
   border-radius: 8px;
 }
 
+.centered-img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: auto;
+}
+
 /* Footer */
 footer {
   background-color: #f4f4f4;
