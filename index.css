@@ -14,7 +14,7 @@ body {
 
 /* Header */
 header {
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(to right, #341632, #793474, #c051b9);
   color: #fff;
   padding: 60px 20px;
   text-align: center;
@@ -53,7 +53,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #00bcd4;
+  color: #c051b9;
 }
 
 /* Sections */
@@ -66,7 +66,7 @@ section {
 section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #203a43;
+  color: #341632;
 }
 
 section ul {
@@ -81,7 +81,7 @@ section ul li {
 /* Buttons */
 a.button {
   display: inline-block;
-  background-color: #00bcd4;
+  background-color: #c051b9;
   color: #fff;
   padding: 12px 24px;
   border-radius: 4px;
@@ -91,7 +91,7 @@ a.button {
 }
 
 a.button:hover {
-  background-color: #0097a7;
+  background-color: #c051b9;
 }
 
 /* Footer */
@@ -101,6 +101,13 @@ footer {
   padding: 30px 20px;
   font-size: 0.9rem;
   color: #666;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ccc;
+  margin: 40px 0;
 }
 
 /* Responsive */
