@@ -112,7 +112,7 @@ a.button:hover {
   border-radius: 8px;
 }
 
-.centered-img img {
+.centered-img {
   width: 50px;
   height: auto;
   display: block;
