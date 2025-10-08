@@ -113,8 +113,8 @@ a.button:hover {
 }
 
 .centered-img img {
-  max-width: 300px;
-  width: 50%;
+  max-width: 100px;
+  width: 10%;
   height: auto;
   display: block;
   margin: 0 auto;
