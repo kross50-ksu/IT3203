@@ -112,12 +112,14 @@ a.button:hover {
   border-radius: 8px;
 }
 
-.centered-img {
+.centered-img img {
+  max-width: 300px;
+  width: 50%;
+  height: auto;
   display: block;
   margin: 0 auto;
-  width: 60px;
-  height: auto;
 }
+
 
 /* Footer */
 footer {
