@@ -1,0 +1,63 @@
+/* psuedo code for the CSS file */
+:root {
+    /* Primary Colors */
+    --background-color: #eeeff1;
+    --link-color: #4a76ee;
+    --text-color: #1a1c20;   
+
+    /* Layout and Spacing */
+    --text-align-center: center;
+    --border-radius: 5px;
+    --padding-small: 5px 10px;
+    --padding-medium: 10px 20px;
+    --gap-large: 50px;
+    --gap-small: 10px;
+    --border-color: #d3d3d3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR Styling*/
+nav {
+   display: flex;
+   background-color: lightblue;
+   color: #fff;
+   box-shadow: 0 4px 8px rgba(9, 37, 116, 0.1);
+   justify-content: space-between;
+   align-items: center;
+   padding:0 10px;
+   height: 80px;
+}
+/* Left Side of Navbar */
+nav .left a {
+   color: var(--text-color);
+   font-size: 22px;
+   font-weight: 600;
+   margin:0 10px;
+}
+
+nav .left a:hover {
+    border: 2px solid var(--text-color);    
+    color: red;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+/* Right Side of Navbar */
+nav .right a {
+   color: var(--text-color);
+   margin: 0 10px;
+}
+
+nav .right a:last-child {
+   color: var(--background-color);
+   background-color: var(--text-color);
+   padding: 5px 15px;
+   border-radius: 5px;
+}
+
+nav .right a span {
+   margin-left: 5px;
+}
