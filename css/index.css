@@ -105,9 +105,9 @@ footer {
 
 hr {
   border: none;
-  height: 2px;
+  height: 1px;
   background-color: #ccc;
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
 /* Responsive */
