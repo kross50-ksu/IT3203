@@ -93,7 +93,7 @@ a.button {
 a.button:hover {
   background-color: #c051b9;
 }
-/*Images*/
+/* Images */
 .text-image-right {
   display: flex;
   align-items: center;
@@ -110,6 +110,13 @@ a.button:hover {
   max-width: 300px;
   height: auto;
   border-radius: 8px;
+}
+
+.centered-img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
 }
 
 /* Footer */
