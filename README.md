@@ -32,7 +32,7 @@ This site is hosted via GitHub Pages at:
 **Khaliya Ross**  
 - Junior IT major at Kennesaw State University - Returning
 - Focused on web development, database design, and real-world IT project management
-- Currently employed at Infosys Ltd. and NTT Data-W2
+- Currently employed at Infosys Ltd. and NTT Data-W2 (Novelis)
 
 ## Notes
 - No frameworks or CMS were used—this site is built with pure HTML and CSS.

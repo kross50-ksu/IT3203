@@ -6,15 +6,15 @@
   <link rel="stylesheet" href="css/index.css"> 
 </head>
 <body>
-    <nav>
+ <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="history.html">History</a></li>
-      <li><a href="evolution.html">Evolution</a></li>
-      <li><a href="trends.html">Current Trends</a></li>
-      <li><a href="concepts.html">Key Concepts</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="index.html" title="Go to Home Page" >Home</a></li>
+      <li><a href="history.html" title="History of the Web" >History</a></li>
+      <li><a href="evolution.html"title="Evolution of the Web">Evolution</a></li>
+      <li><a href="trends.html" title="Current Web Trends">Current Trends</a></li>
+      <li><a href="concepts.html" title="Key Web Development Concepts">Key Concepts</a></li>
+      <li><a href="resources.html" title="Helpful Resources">Resources</a></li>
+      <li><a href="about.html" title="About Me">About</a></li>
     </ul>
   </nav>
 
@@ -22,28 +22,68 @@
     <h1>Rise of Design & Interactivity</h1>
   </header>
 
-  <section>
-    <p>Learn how JavaScript, CSS, and Flash transformed websites in the late 1990s and early 2000s. Discover the impact of e-commerce, Web 2.0 platforms, and user-generated content on the evolution of web design and functionality.</p>
-  </section>
-
   <section id="design-shift">
-  <h2>From Static to Dynamic</h2>
-  <p>Explore how websites evolved from plain HTML to dynamic, styled layouts using CSS and JavaScript.</p>
-  </section>
+  <h2>Static to Dynamic</h2>
+  <p>The late 1990s marked a turning point in web development as websites began to shift from static, text-heavy pages to visually engaging and interactive platforms. Two key technologies, JavaScript, introduced in 1995 by Brendan Eich at Netscape, and Cascading Style Sheets (CSS), standardized by the W3C in 1996, revolutionized how developers could control both behavior and presentation. JavaScript enabled dynamic interactions like form validation, mouseover effects, and real-time updates. CSS allowed designers to separate content from styling, making websites more flexible and visually appealing.</p>
+  <br/>
+   <div class="image-row">
+    <figure>
+      <img src="img/JS.jpg" alt="Javascript">
+      <figcaption>Javascript</figcaption>
+    </figure>
+    <figure>
+      <img src="img/CSS.png" alt="CSS">
+      <figcaption>CSS</figcaption>
+    </figure>
+  </div>
+  <br/>
+  <p>During this period, table-based layouts became the dominant method for structuring web pages. Though originally intended for displaying tabular data, HTML tables were repurposed to create multi-column designs and nested grids. Designers used spacer GIFs and layout hacks to achieve pixel-perfect control, often at the cost of accessibility and performance. Meanwhile, Flash emerged as a powerful tool for adding animations, audio, and interactive elements. Entire websites were built in Flash, showcasing splash pages, product demos, and games. However, these sites were often slow to load and inaccessible to search engines and screen readers.</p>
+  <br/>
+  <br/>
+  <table border="1" cellpadding="10" cellspacing="0" width="100%">
+  <tr>
+    <td colspan="2" style="background-color: #f2f2f2; text-align: center;">
+      <strong>HEADER</strong>
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" style="background-color: #e0e0e0;">
+      <strong>SIDEBAR</strong><br>
+      Navigation links or extra info
+    </td>
+    <td width="75%" style="background-color: #ffffff;">
+      <strong>MAIN CONTENT</strong><br>
+      This is where the main article or page content would go.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="background-color: #f2f2f2; text-align: center;">
+      <strong>FOOTER</strong><br>
+      Contact info, copyright, etc.
+    </td>
+  </tr>
+</table>
 
+</section>
   <section id="web-2">
     <h2>The Rise of Web 2.0</h2>
-    <p>Learn how user-generated content, blogs, and social media reshaped the web into a participatory platform.</p>
-  </section>
-
-  <section id="interactivity">
-    <h2>Interactivity and UX</h2>
-    <p>Discover how JavaScript, AJAX, and responsive design transformed user experience and engagement.</p>
+    <p>By the early 2000s, the web entered the Web 2.0 era, a paradigm shift defined by user-generated content, interactivity, and collaboration. Platforms like Blogger, Myspace, and Wikipedia empowered users to create and share content. YouTube and Facebook redefined social engagement online. Web 2.0 emphasized participation over consumption, turning websites into living communities rather than static destinations. This shift also introduced new challenges around moderation, data privacy, and digital identity. Nevertheless, it fundamentally changed how people interacted with the internet.</p>
+    <br/>
+    <br/>
+    <img class='center-image'src="img/User-Generated-Content.png" alt="UGC">
   </section>
 
   <section id="mobile-era">
     <h2>Mobile-First and Beyond</h2>
-    <p>Understand the shift toward mobile-first design and the impact of smartphones on web development.</p>
+    <p>The 2010s ushered in a seismic shift in web development, driven by the explosive growth of smartphones and tablets. With mobile devices accounting for over half of global web traffic by the mid-2010s, designers and developers were forced to rethink how websites were built and experienced. No longer could sites be optimized solely for desktop screens. Users demanded seamless, intuitive access from any device, anywhere.
+This demand gave rise to responsive web design, a technique that allows websites to adapt fluidly to different screen sizes and orientations. </p>
+<br/>
+<p>Using CSS3 media queries, developers could define breakpoints that triggered layout changes based on device width, resolution, or orientation. Combined with flexible grids and fluid images, responsive design ensured that content remained readable and navigable whether viewed on a phone, tablet, or desktop.
+Alongside responsiveness came the mobile-first design philosophy, which flipped traditional development on its head. Instead of designing for desktop and scaling down, developers began with the smallest screen and built upward. This strategy emphasized performance, clarity, and essential content, especially important for users on slower mobile networks or limited data plans. Touch-friendly interfaces became critical, with larger buttons, simplified navigation, and gesture-based interactions like swiping and pinching.
+The mobile revolution also fueled the rise of Content Management Systems (CMS) like WordPress, Wix, and Squarespace. These platforms democratized web development, allowing users with little to no coding experience to build responsive, mobile-optimized websites using drag-and-drop editors and pre-designed templates.</p>
+<br/>
+<img class='center-image'src='img/Mobile.jpeg' alt='Mobile-First Design'>
+
   </section>
 
 
