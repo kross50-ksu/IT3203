@@ -29,6 +29,16 @@ header p {
   font-size: 1.2rem;
 }
 
+.keycons h2{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #F17D04;
+}
+.keyconsdefs strong{
+  margin-bottom: 20px;
+  color: #073AD4;
+}
+
 /* Navigation */
 nav {
   background-color: #222;

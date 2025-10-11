@@ -19,9 +19,9 @@ The website includes the following pages:
 - `about.html` – Author bio and project background
 
 ## Assets
-- All images are stored in the `/images/` folder. 
+- All images are stored in the `/img/` folder. 
 - Styles are managed through `/css/index.css`.
-- Images & videos were AI generated using Adobe Firefly
+- 80%+ of images were AI generated using Adobe Firefly (exceptions Mosaic, DialUp, TimB, Personal Photo)
 
 ## Deployment
 This site is hosted via GitHub Pages at:

@@ -1,16 +1,21 @@
 <!DOCTYPE html>
+<!-- Page setup -->
 <html lang="en">
 <head>
+  <!-- Character encoding and page title -->
   <meta charset="UTF-8">
   <title>Key Concepts</title>
+  <!-- Link to external stylesheet -->
   <link rel="stylesheet" href="css/index.css"> 
 </head>
 <body>
- <nav>
+
+  <!-- Navigation bar -->
+  <nav>
     <ul>
       <li><a href="index.html" title="Go to Home Page" >Home</a></li>
       <li><a href="history.html" title="History of the Web" >History</a></li>
-      <li><a href="evolution.html"title="Evolution of the Web">Evolution</a></li>
+      <li><a href="evolution.html" title="Evolution of the Web">Evolution</a></li>
       <li><a href="trends.html" title="Current Web Trends">Current Trends</a></li>
       <li><a href="concepts.html" title="Key Web Development Concepts">Key Concepts</a></li>
       <li><a href="resources.html" title="Helpful Resources">Resources</a></li>
@@ -18,50 +23,62 @@
     </ul>
   </nav>
 
+  <!-- Header section -->
   <header>
     <h1>Key Concepts in Web Development</h1>
+    <p>Understanding the building blocks of web development is essential for creating modern, accessible, and responsive websites.</p>
   </header>
 
-  <section>
+  <!-- Overview of key concepts -->
+  <section class="keyconsdefs">
+    <!-- List of web development terms -->
     <ul>
-      <li><strong>HTML (HyperText Markup Language):</strong> The foundational language used to structure content on the web.</li>
-      <li><strong>CSS (Cascading Style Sheets):</strong> A styling language that controls layout, colors, fonts, and responsiveness.</li>
-      <li><strong>JavaScript:</strong> A scripting language that enables interactivity, dynamic content, and client-side logic.</li>
-      <li><strong>Single-Page Application (SPA):</strong> A web app that loads a single HTML page and dynamically updates content without refreshing.</li>
-      <li><strong>Progressive Web App (PWA):</strong> A hybrid between websites and mobile apps, offering offline access, push notifications, and installability.</li>
-      <li><strong>Responsive Design:</strong> A design approach that ensures websites adapt to different screen sizes and devices.</li>
-      <li><strong>Accessibility (WCAG):</strong> Guidelines that ensure websites are usable by people with disabilities, including screen reader compatibility and keyboard navigation.</li>
-    </ul>
+    <li><strong><a href="#html">HTML (HyperText Markup Language):</a></strong> The foundational language used to structure content on the web.</li>
+    <li><strong><a href="#css">CSS (Cascading Style Sheets):</a></strong> A styling language that controls layout, colors, fonts, and responsiveness.</li>
+    <li><strong><a href="#javascript">JavaScript:</a></strong> A scripting language that enables interactivity, dynamic content, and client-side logic.</li>
+    <li><strong>Single-Page Application (SPA):</strong> A web app that loads a single HTML page and dynamically updates content without refreshing.</li>
+    <li><strong>Progressive Web App (PWA):</strong> A hybrid between websites and mobile apps, offering offline access, push notifications, and installability.</li>
+    <li><strong><a href="#responsive">Responsive Design:</a></strong> A design approach that ensures websites adapt to different screen sizes and devices.</li>
+    <li><strong><a href="#accessibility">Accessibility (WCAG):</a></strong> Guidelines that ensure websites are usable by people with disabilities, including screen reader compatibility and keyboard navigation.</li>
+  </ul>
+    <!-- Supporting image for key concepts -->
+    <img class='center-image' src="img/BuildBlocks.jpg" alt="Web Development Concepts">
   </section>
 
-  <section id="html">
-  <h2>HTML</h2>
-  <p>HTML (HyperText Markup Language) is the backbone of every webpage. It defines the structure of content using semantic tags like header, section, and footer. Proper HTML improves accessibility, SEO, and maintainability by clearly communicating the role of each element to browsers and assistive technologies.</p>
+  <!-- Section: HTML -->
+  <section class="keycons" id="html">
+    <h2>HTML</h2>
+    <p>HTML (HyperText Markup Language) is the backbone of every webpage. It defines the structure of content using semantic tags like header, section, and footer. Proper HTML improves accessibility, SEO, and maintainability by clearly communicating the role of each element to browsers and assistive technologies.</p>
   </section>
 
-  <section id="css">
+  <!-- Section: CSS -->
+  <section class="keycons" id="css">
     <h2>CSS</h2>
     <p>CSS (Cascading Style Sheets) controls the visual presentation of web content. It allows developers to style elements with colors, fonts, spacing, and layout techniques like Flexbox and Grid. Media queries enable responsive design, ensuring websites look great on any device.</p>
   </section>
 
-  <section id="javascript">
+  <!-- Section: JavaScript -->
+  <section class="keycons" id="javascript">
     <h2>JavaScript</h2>
     <p>JavaScript adds interactivity and dynamic behavior to websites. It enables features like dropdowns, modals, form validation, and real-time updates. JavaScript interacts with the DOM and can fetch data from APIs, making it essential for modern web applications.</p>
   </section>
 
-  <section id="accessibility">
+  <!-- Section: Accessibility -->
+  <section class="keycons" id="accessibility">
     <h2>Accessibility</h2>
     <p>Accessibility ensures websites are usable by everyone, including people with disabilities. Following WCAG guidelines means using alt text, proper heading structure, keyboard-friendly navigation, and ARIA roles to support screen readers and other assistive technologies.</p>
   </section>
 
-  <section id="responsive">
+  <!-- Section: Responsive Design -->
+  <section class="keycons" id="responsive">
     <h2>Responsive Design</h2>
     <p>Responsive design allows websites to adapt to different screen sizes and devices. Using flexible grids, scalable images, and media queries, developers can create layouts that maintain usability and aesthetics across desktops, tablets, and smartphones.</p>
   </section>
 
-
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Khaliya Ross | IT3203 Web Development Project</p>
   </footer>
+
 </body>
 </html>
