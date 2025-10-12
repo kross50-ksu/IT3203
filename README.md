@@ -15,8 +15,9 @@ The website includes the following pages:
 - `evolution.html` – Rise of design, interactivity, and Web 2.0
 - `trends.html` – Modern frameworks, SPAs, PWAs, and future trends
 - `concepts.html` – Definitions of key web development concepts
-- `resources.html` – References and external learning resources
+- `resources.html` –s References and external learning resources
 - `about.html` – Author bio and project background
+- `index.css` - External stylesheet containing CSS selectors, class definitions, and layout rules
 
 ## Assets
 - All images are stored in the `/img/` folder. 
