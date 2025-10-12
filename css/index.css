@@ -29,16 +29,6 @@ header p {
   font-size: 1.2rem;
 }
 
-.keycons h2{
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #F17D04;
-}
-.keyconsdefs strong{
-  margin-bottom: 20px;
-  color: #073AD4;
-}
-
 /* Navigation */
 nav {
   background-color: #222;
@@ -109,19 +99,29 @@ a.button:hover {
   background-color: #c051b9;
 }
 /* Images */
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .text-image-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .text-image-right .text {
   flex: 1;
-  padding-right: 40px;
+  min-width: 300px;
 }
 
 .text-image-right img {
-  max-width: 40%;
+  flex-shrink: 0;
+  width: 40%;
+  max-width: 400px;
   height: auto;
   border-radius: 8px;
 }
@@ -212,4 +212,18 @@ hr {
   section {
     padding: 40px 15px;
   }
+  .text-image-right {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-image-right img {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .text-image-right .text {
+    padding-right: 0;
+  }
 }
+
