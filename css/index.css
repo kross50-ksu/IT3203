@@ -28,6 +28,16 @@ header h1 {
 header p {
   font-size: 1.2rem;
 }
+.keycons h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #F17D04;
+}
+
+.keyconsdefs strong {
+  margin-bottom: 20px;
+  color: #073AD4;
+}
 
 /* Navigation */
 nav {
@@ -81,6 +91,12 @@ section ul {
 
 section ul li {
   margin-bottom: 10px;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
 }
 
 /* Buttons */
@@ -189,13 +205,6 @@ footer {
   padding: 30px 20px;
   font-size: 0.9rem;
   color: #666;
-}
-
-hr {
-  border: none;
-  height: 1px;
-  background-color: #ccc;
-  margin: 10px 0;
 }
 
 /* Responsive */
