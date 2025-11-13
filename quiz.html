@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Development History Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+    }
+    input[type="text"], input[type="checkbox"], input[type="radio"] {
+      margin-right: 10px;
+    }
+    button {
+      background: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+    #results {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .correct {
+      color: green;
+      font-weight: bold;
+    }
+    .incorrect {
+      color: red;
+      font-weight: bold;
+    }
+    .pass {
+      background: #d4edda;
+      color: #155724;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .fail {
+      background: #f8d7da;
+      color: #721c24;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quiz: History of Web Development</h1>
+  <form id="quizForm">
+    <!-- Fill-in-the-blank -->
+    <div class="question">
+      <label>1. Fill in the blank: The first web browser created by Tim Berners-Lee was called ______.</label>
+      <input type="text" name="q1">
+    </div>
+
+    <!-- Multiple choice -->
+    <div class="question">
+      <label>2. Which year was the World Wide Web introduced to the public?</label>
+      <input type="radio" name="q2" value="1989">1989<br>
+      <input type="radio" name="q2" value="1991">1991<br>
+      <input type="radio" name="q2" value="1995">1995<br>
+    </div>
+
+    <div class="question">
+      <label>3. Which company introduced the Mosaic browser?</label>
+      <input type="radio" name="q3" value="NCSA">NCSA<br>
+      <input type="radio" name="q3" value="Microsoft">Microsoft<br>
+      <input type="radio" name="q3" value="Netscape">Netscape<br>
+    </div>
+
+    <div class="question">
+      <label>4. Which language was introduced to add interactivity to web pages?</label>
+      <input type="radio" name="q4" value="CSS">CSS<br>
+      <input type="radio" name="q4" value="JavaScript">JavaScript<br>
+      <input type="radio" name="q4" value="HTML">HTML<br>
+    </div>
+
+    <!-- Multi-select -->
+    <div class="question">
+      <label>5. Select all technologies that are considered core building blocks of the modern web:</label>
+      <input type="checkbox" name="q5" value="HTML">HTML<br>
+      <input type="checkbox" name="q5" value="CSS">CSS<br>
+      <input type="checkbox" name="q5" value="JavaScript">JavaScript<br>
+      <input type="checkbox" name="q5" value="Python">Python<br>
+    </div>
+
+    <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+    <button type="reset" onclick="resetQuiz()">Reset Quiz</button>
+  </form>
+
+  <div id="results"></div>
+
+  <script>
+    function submitQuiz() {
+      let score = 0;
+      let resultsHTML = "";
+
+      // Correct answers
+      const answers = {
+        q1: "WorldWideWeb",
+        q2: "1991",
+        q3: "NCSA",
+        q4: "JavaScript",
+        q5: ["HTML","CSS","JavaScript"]
+      };
+
+      // Q1
+      let q1 = document.querySelector('input[name="q1"]').value.trim();
+      if (q1.toLowerCase() === answers.q1.toLowerCase()) {
+        score++;
+        resultsHTML += "<p class='correct'>Q1 Correct! Answer: WorldWideWeb</p>";
+      } else {
+        resultsHTML += "<p class='incorrect'>Q1 Incorrect. Correct Answer: WorldWideWeb</p>";
+      }
+
+      // Q2
+      let q2 = document.querySelector('input[name="q2"]:checked');
+      if (q2 && q2.value === answers.q2) {
+        score++;
+        resultsHTML += "<p class='correct'>Q2 Correct! Answer: 1991</p>";
+      } else {
+        resultsHTML += "<p class='incorrect'>Q2 Incorrect. Correct Answer: 1991</p>";
+      }
+
+      // Q3
+      let q3 = document.querySelector('input[name="q3"]:checked');
+      if (q3 && q3.value === answers.q3) {
+        score++;
+        resultsHTML += "<p class='correct'>Q3 Correct! Answer: NCSA</p>";
+      } else {
+        resultsHTML += "<p class='incorrect'>Q3 Incorrect. Correct Answer: NCSA</p>";
+      }
+
+      // Q4
+      let q4 = document.querySelector('input[name="q4"]:checked');
+      if (q4 && q4.value === answers.q4) {
+        score++;
+        resultsHTML += "<p class='correct'>Q4 Correct! Answer: JavaScript</p>";
+      } else {
+        resultsHTML += "<p class='incorrect'>Q4 Incorrect. Correct Answer: JavaScript</p>";
+      }
+
+      // Q5
+      let q5 = Array.from(document.querySelectorAll('input[name="q5"]:checked')).map(cb => cb.value);
+      if (JSON.stringify(q5.sort()) === JSON.stringify(answers.q5.sort())) {
+        score++;
+        resultsHTML += "<p class='correct'>Q5 Correct! Answer: HTML, CSS, JavaScript</p>";
+      } else {
+        resultsHTML += "<p class='incorrect'>Q5 Incorrect. Correct Answer: HTML, CSS, JavaScript</p>";
+      }
+
+      // Final results
+      let passFail = score >= 3 ? 
+        `<div class='pass'>Pass! Total Score: ${score}/5</div>` : 
+        `<div class='fail'>Fail. Total Score: ${score}/5</div>`;
+
+      document.getElementById("results").innerHTML = passFail + resultsHTML;
+    }
+
+    function resetQuiz() {
+      document.getElementById("results").innerHTML = "";
+    }
+  </script>
+</body>
+</html>
