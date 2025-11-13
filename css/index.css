@@ -247,23 +247,24 @@ footer {
   font-weight: 600;
   display: block;
   margin-bottom: 8px;
-  color: #34495e;
+  color: #341632;
 }
 
 #quizPage input[type="text"] {
   width: 100%;
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 5px;
 }
 
 #quizPage input[type="radio"],
 #quizPage input[type="checkbox"] {
   margin-right: 8px;
+  border: 1px solid #000000;
 }
 
 #quizPage button {
-  background-color: #3498db;
+  background-color: #341632;
   color: #fff;
   padding: 10px 18px;
   border: none;
