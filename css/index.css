@@ -157,6 +157,14 @@ a.button:hover {
   margin-left: 05%;
   min-width: 500px;
 }
+
+.img-right-small {
+  float: right;         
+  width: 250px;          
+  margin: 0 0 10px 15px; 
+  border-radius: 8px;    
+}
+
   .framework-images {
     display: flex;
     justify-content: center;
