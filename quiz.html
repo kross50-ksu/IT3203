@@ -46,6 +46,15 @@
       <input type="checkbox" name="q5" value="JavaScript">JavaScript<br>
       <input type="checkbox" name="q5" value="Python">Python<br>
     </div>
+    
+    <div class="question">
+        <label>6. What was the name of the first website created by Tim Berners-Lee?</label>
+        <input type="radio" name="q6" value="worldwideweb.com">worldwideweb.com<br>
+        <input type="radio" name="q6" value="info.cern.ch">info.cern.ch<br>
+        <input type="radio" name="q6" value="w3.org">w3.org<br>
+        <input type="radio" name="q6" value="bernerslee.org">bernerslee.org<br>
+    </div>
+
     <button type="button" onclick="submitQuiz()">Submit Quiz</button>
     <button type="reset" onclick="resetQuiz()">Reset Quiz</button>
   </form>
@@ -60,11 +69,12 @@
 
       // Correct answers
       const answers = {
-        q1: "WorldWideWeb",
+        q1: "World Wide Web",
         q2: "1991",
         q3: "NCSA",
         q4: "JavaScript",
         q5: ["HTML","CSS","JavaScript"]
+        q6: "info.cern.ch"
       };
 
       // Q1
@@ -111,11 +121,19 @@
       } else {
         resultsHTML += "<p class='incorrect'>Q5 Incorrect. Correct Answer: HTML, CSS, JavaScript</p>";
       }
+      // Q6
+      let q6 = document.querySelector('input[name="q6"]:checked');
+      if (q6 && q6.value === answers.q6) {
+        score++;
+        resultsHTML += "<p class='correct'>Q6 Correct! Answer: info.cern.ch</p>";
+    } else {
+        resultsHTML += "<p class='incorrect'>Q6 Incorrect. Correct Answer: info.cern.ch</p>";
+    }
 
       // Final results
-      let passFail = score >= 3 ? 
-        `<div class='pass'>Pass! Total Score: ${score}/5</div>` : 
-        `<div class='fail'>Fail. Total Score: ${score}/5</div>`;
+      let passFail = score >= 4.2 ? 
+        `<div class='pass'>Pass! Total Score: ${score}/6</div>` : 
+        `<div class='fail'>Fail. Total Score: ${score}/6</div>`;
 
       document.getElementById("results").innerHTML = passFail + resultsHTML;
     }
