@@ -217,35 +217,6 @@ footer {
   color: #666;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
-
-  section {
-    padding: 40px 15px;
-  }
-  .text-image-right {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .text-image-right img {
-    width: 80%;
-    margin-top: 20px;
-  }
-
-  .text-image-right .text {
-    padding-right: 0;
-  }
-}
-
 /* Quiz Page Scoped Styles */
 #quizPage {
   font-family: 'Segoe UI', Arial, sans-serif;
@@ -340,4 +311,32 @@ footer {
   margin-bottom: 10px;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+  .text-image-right {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-image-right img {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .text-image-right .text {
+    padding-right: 0;
+  }
+}
 
