@@ -27,27 +27,27 @@
     <!-- Fill-in-the-blank -->
     <div class="question">
       <label>1. Fill in the blank: The first web browser created by Tim Berners-Lee was called ______.</label>
-      <input type="text" name="q1">
+      <input type="text" name="q1" required>
     </div>
 
     <!-- Multiple choice -->
     <div class="question">
       <label>2. Which year was the World Wide Web introduced to the public?</label>
-      <input type="radio" name="q2" value="1989">1989<br>
+      <input type="radio" name="q2" value="1989" required>1989<br>
       <input type="radio" name="q2" value="1991">1991<br>
       <input type="radio" name="q2" value="1995">1995<br>
     </div>
 
     <div class="question">
       <label>3. Which company introduced the Mosaic browser?</label>
-      <input type="radio" name="q3" value="NCSA">NCSA<br>
+      <input type="radio" name="q3" value="NCSA" required>NCSA<br>
       <input type="radio" name="q3" value="Microsoft">Microsoft<br>
       <input type="radio" name="q3" value="Netscape">Netscape<br>
     </div>
 
     <div class="question">
       <label>4. Which language was introduced to add interactivity to web pages?</label>
-      <input type="radio" name="q4" value="CSS">CSS<br>
+      <input type="radio" name="q4" value="CSS" required>CSS<br>
       <input type="radio" name="q4" value="JavaScript">JavaScript<br>
       <input type="radio" name="q4" value="HTML">HTML<br>
     </div>
@@ -55,7 +55,7 @@
     <!-- Multi-select -->
     <div class="question">
       <label>5. Select all technologies that are considered core building blocks of the modern web:</label>
-      <input type="checkbox" name="q5" value="HTML">HTML<br>
+      <input type="checkbox" name="q5" value="HTML" required>HTML<br>
       <input type="checkbox" name="q5" value="CSS">CSS<br>
       <input type="checkbox" name="q5" value="JavaScript">JavaScript<br>
       <input type="checkbox" name="q5" value="Python">Python<br>
@@ -63,7 +63,7 @@
     
     <div class="question">
         <label>6. What was the name of the first website created by Tim Berners-Lee?</label>
-        <input type="radio" name="q6" value="worldwideweb.com">worldwideweb.com<br>
+        <input type="radio" name="q6" value="worldwideweb.com" required>worldwideweb.com<br>
         <input type="radio" name="q6" value="info.cern.ch">info.cern.ch<br>
         <input type="radio" name="q6" value="w3.org">w3.org<br>
         <input type="radio" name="q6" value="bernerslee.org">bernerslee.org<br>
@@ -87,7 +87,7 @@
         q2: "1991",
         q3: "NCSA",
         q4: "JavaScript",
-        q5: ["HTML","CSS","JavaScript"]
+        q5: ["HTML","CSS","JavaScript"],
         q6: "info.cern.ch"
       };
 
