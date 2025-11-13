@@ -3,76 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Web Development History Quiz</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f9;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #2c3e50;
-    }
-    form {
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      max-width: 700px;
-      margin: auto;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .question {
-      margin-bottom: 20px;
-    }
-    label {
-      font-weight: bold;
-      display: block;
-      margin-bottom: 8px;
-    }
-    input[type="text"], input[type="checkbox"], input[type="radio"] {
-      margin-right: 10px;
-    }
-    button {
-      background: #3498db;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-right: 10px;
-    }
-    button:hover {
-      background: #2980b9;
-    }
-    #results {
-      margin-top: 20px;
-      padding: 15px;
-      border-radius: 8px;
-    }
-    .correct {
-      color: green;
-      font-weight: bold;
-    }
-    .incorrect {
-      color: red;
-      font-weight: bold;
-    }
-    .pass {
-      background: #d4edda;
-      color: #155724;
-      padding: 10px;
-      border-radius: 5px;
-    }
-    .fail {
-      background: #f8d7da;
-      color: #721c24;
-      padding: 10px;
-      border-radius: 5px;
-    }
-  </style>
 </head>
 <body>
+<div id="quizPage">
   <h1>Quiz: History of Web Development</h1>
   <form id="quizForm">
     <!-- Fill-in-the-blank -->
@@ -117,6 +50,7 @@
   </form>
 
   <div id="results"></div>
+  </div>
 
   <script>
     function submitQuiz() {
