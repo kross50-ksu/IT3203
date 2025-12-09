@@ -18,10 +18,12 @@ The website includes the following pages:
 - `resources.html` –s References and external learning resources
 - `about.html` – Author bio and project background
 - `index.css` - External stylesheet containing CSS selectors, class definitions, and layout rules
+- `index.js` - External script containing menu toggle and quiz features for reset, submission, and scoring.
 
 ## Assets
 - All images are stored in the `/img/` folder. 
 - Styles are managed through `/css/index.css`.
+- Scripts are managed in `/js/index.js`.
 - 80%+ of images were AI generated using Adobe Firefly (exceptions Mosaic, DialUp, TimB, Personal Photo)
 
 ## Deployment
@@ -36,7 +38,7 @@ This site is hosted via GitHub Pages at:
 - Currently employed at Infosys Ltd. and NTT Data-W2 (Novelis)
 
 ## Notes
-- No frameworks or CMS were used—this site is built with pure HTML and CSS.
+- No frameworks or CMS were used—this site is built with pure HTML, CSS, and JS.
 - Designed for clarity, accessibility, and semantic structure.
 
 
